@@ -1,0 +1,7 @@
+node_modules
+build
+k8s
+.dockerignore
+Dockerfile
+Dockerfile.prod
+.git

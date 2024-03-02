@@ -1,0 +1,189 @@
+header {
+    padding: 15px 0;
+    background-color: var(--background-primary);
+}
+
+.header-content {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-left: calc(50% - var(--section-width)/ 2);
+    padding-right: calc(50% - var(--section-width)/ 2);
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.header-content > h1 {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+#lang-button {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    height: 28px;
+}
+
+#nav-links {
+    display: flex;
+    gap: calc(4 * var(--space));
+    list-style: none;
+    align-items: center;
+}
+
+#nav-links > li > a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+#nav-links > li:hover {
+    margin-top: 3px;
+}
+
+#nav-links > li > a:hover::after {
+    display: block;
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: var(--secondary);
+    border-radius: 5px;
+}
+
+#burger-menu-button {
+    display: none;
+    margin: 0;
+    background-color: transparent;
+    width: max-content;
+    height: 25px;
+    padding: 0;
+}
+
+#burger-menu-button span {
+    transform: rotate(0deg);
+    font-size: 0;
+    transition: .3s;
+}
+
+#burger-menu-button span::before {
+    top: -5px;
+}
+
+#burger-menu-button span::after {
+    bottom: -3px;
+}
+
+#burger-menu-button span, #burger-menu-button span::before,  #burger-menu-button span::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 16px;
+    height: 2px;
+    background: black;
+    padding: 0;
+}
+
+@media (max-width: 1360px) {
+    .header-content {
+        padding-left: 0;
+        padding-right: 0;
+        width: 90%;
+    }
+}
+
+@media (max-width: 900px) {
+    header {
+        padding: 15px 0 0 0;
+    }
+    
+    header .logo {
+        width: 150px;
+    }
+    header.nav-open nav {
+        display: flex;
+    }
+    nav {
+        display: none;
+        position:fixed;
+        z-index: 100;
+        top:0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0.819);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        gap: calc(4 * var(--space));
+    }
+    
+    #nav-links {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #nav-links > li > a {
+        color: white;
+    }
+    
+    #burger-menu-button {
+        display: initial;
+        
+    }
+    
+    header.nav-open #burger-menu-button span {
+        transform: rotate(135deg);
+        transition: .5s;
+    }
+    
+    header.nav-open #burger-menu-button span::before {
+        top: 0px;
+        transform: rotate(90deg);
+        transition: .5s;
+    }
+    
+    header.nav-open #burger-menu-button span::after {
+        bottom:2px;
+    }
+    
+    header.nav-open #burger-menu-button span, header.nav-open #burger-menu-button span::before,  header.nav-open #burger-menu-button span::after{
+        background-color: white;
+    }
+    
+    header.nav-open #burger-menu-button {
+        z-index: 999;
+        position: fixed;
+        top: 35px;
+        right: 25px;
+    }
+    
+    header.nav-open .logo {
+        position: fixed;
+        z-index: 999;
+        top:15px;
+    }
+    
+    header.nav-open .logo svg > *:nth-child(2) {
+        fill: white;
+    }
+    
+    header.nav-open .logo svg > *:nth-child(3), header.nav-open .logo svg > *:nth-child(4){
+        stroke: white;
+    }
+    
+}

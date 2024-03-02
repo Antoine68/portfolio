@@ -1,0 +1,14 @@
+#projects-background {
+    margin-top: -120px;
+    width: 100%;
+    padding: 150px 0 50px 0;
+}
+
+#ide-container {
+    margin-top: 50px;
+}
+
+#ide-container > .ide {
+    height: 700px;
+}
+

@@ -1,0 +1,108 @@
+#presentation-background {
+    margin-top: -80px;
+    width: 100%;
+    padding: 150px 0;
+}
+
+#presentation-content {
+    margin-top: 50px;
+    grid-gap: 80px;
+    display: grid;
+    width: 100%;
+}
+
+#presentation-text {
+    margin: 0 auto;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#presentation-text-container {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    position: relative;
+}
+
+#presentation-text-container > span {
+    width: 360px;
+    font-weight: bold;
+    font-size: 29px;
+}
+
+#presentation-text-container > p {
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+#quote {
+    position: absolute;
+    right: 20px;
+    top: -35px;
+    width: 120px;
+    opacity: 0.7;
+    transform: rotate(15deg);
+}
+
+#technos {
+    width: 80%;
+    margin-top: 10px;
+}
+
+
+@media (min-width: 1190px) {
+    #presentation-content {
+        grid-template-columns: 50% 50%;
+        grid-gap: 0;
+    }
+    #presentation-text {
+        margin: 0;
+        justify-self: end;
+    }
+    #presentation-text-container {
+        width: 450px;
+    }    
+}
+
+@media (max-width: 1015px) {
+    #presentation-background {
+        margin-top: 80px;
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 890px) {
+    #presentation-content {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 650px) {
+    #presentation-text-container {
+        width: 100%;
+    }
+    #presentation-text-container >  #technos {
+        align-self: center;
+    }
+    
+}
+
+@media (max-width: 490px) {
+    #quote {
+        right: 0px;
+        top:-40px;
+    }
+    #presentation-background {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 400px) {
+    #presentation-text-container > span {
+        width: 100%;
+    }
+}

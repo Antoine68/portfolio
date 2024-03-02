@@ -1,0 +1,166 @@
+{
+    "ContactMe": "Contact me",
+    "Name": "Name",
+    "Email":"Email",
+    "Subject": "Subject",
+    "Message": "Message",
+    "Send": "Send",
+    "Images": "Images",
+    "File": "File",
+    "Edit": "Edit",
+    "View": "View",
+    "Project": "Project",
+    "sourceCode": "Source code",
+    "nav": {
+       "Presentation": "Presentation",
+       "Skills": "Skills",
+       "Projects": "Projects",
+       "Contact": "Contact"
+    }, 
+    "introduction": {
+        "title": "Software engineer",
+        "text": "I work on all types of digital\ntransformation projects"
+    },
+    "presentation": {
+        "textHeader": "Passionate fullstack developer since 2018.",
+        "text": "Both autonomous and involved in teamwork, I am committed, with agility, to create intuitive and maintainable applications.",
+        "tabs":[
+            {"title": "Studies", "items": [
+                {"title": "Software engineer", "text": "Université de Technologie de Belfort-Montbéliard (FR)", "footer":"2020-2023"},
+                {"title": "Two-year technical degree in Computer Science", "text": "IUT de Belfort-Montbéliard (FR)\nCégep de Matane (QC)", "footer":"2018-2020"},
+                {"title": "High school diploma", "text": "Collège Adélaïde Hautval, Ferrette (FR)", "footer":"2015-2018"}
+            ]},
+            {"title": "Experiences", "items": [
+                {"title": "CS GROUP FRANCE", "text": "Junior Software engineer.\nCreation of business software in Java.", "footer":"July 2023 - today"},
+                {"title": "CS GROUP FRANCE", "text": "End of study internship.\nDevelopment of a job scheduler.", "footer":"February 2023 - July 2023"},
+                {"title": "2LE", "text": "Engineer assistant internship.\nParticipation in the development of Symfony projects.", "footer":"September 2021 - February 2022"}
+            ]}
+        ]
+    },
+    "skills": {
+        "website": {"textHeader": "Creation of websites.", "text": "Whether it is a showcase or a merchant, a website allows you to highlight a company and its products or services to the target audience."},
+        "software": {"textHeader": "Development of business software.", "text": "Customized rich or thin clients that cover the specific needs of businesses."},
+        "mobile": {"textHeader": "Development of mobile applications.", "text": "To provide a better user experience to customers."},
+        "validation": {"textHeader": "All solutions follow a strict validation process.", "text": "This ensures their robustness and reliability."}
+    },
+    "svgIllustration" : {
+        "dataMonitoring": "Data Monitoring",
+        "dataFilter": "Data Filter",
+        "dataTable": "Data Table",
+        "bussinessLogic": "Bussiness Logic",
+        "range": "Range",
+        "tags": "Tags",
+        "rating": "Rating",
+        "color": "Color",
+        "humanResources": "<1>Human</1> <2>Resources</2>",
+        "planning": "Planning",
+        "supplyChain": "<1>Supply</1> <2>Chain</2>",
+        "customers": "Customers",
+        "ORDER": "ORDER",
+        "Item": "Item",
+        "Taxes": "Taxes",
+        "Total": "Total",
+        "currency": "$",
+        "PAY": "PAY  ▶",
+        "desktopApplication": "<1>Desktop</1> <2>application</2>",
+        "mobileApplication": "<1>Mobile</1> <2>application</2>",
+        "webApplication": "<1>Web</1> <2>application</2>",
+        "staticAnalysis": "<1>Static</1> <2>Analysis</2>",
+        "tests": "Tests",
+        "deploy": "Deploy",
+        "schedule": "Schedule",
+        "yourNextTrip": "your next trip",
+        "popular": "Popular",
+        "seeAll": "See all",
+        "flights": "flights",
+        "museum": "Museum",
+        "restaurant": "Restaurant",
+        "sport": "Sport"
+    },
+    "footer": {
+        "rights": "All rights reserved",
+        "thanks": "Thanks for you visit"
+    },
+    "projects" : {
+        "explore": "Explore my project",
+        "Sondeju": {
+            "title": "Survey generator",
+            "content": 
+                ["### Presentation",
+                "Project carried out during my school career.",
+                "This is a web application that allows you to **dynamically create**, using a WYSIWYG editor, **polls** and **surveys** and then classify them by category. All these creations are then **publicly accessible** on the home page.",
+                "This allows anyone visiting the site to **participate in surveys** that interest them, thus promoting **interaction** and **diversity of responses.**",
+                "In addition to participation, the application also offers the possibility of **consulting the results of surveys free of charge**. By making surveys publicly accessible, Sondeju **democratizes access to studies.**",
+                "This allows everyone, regardless of their background or geographic location, to contribute to research and share unique perspectives or even re-educate themselves on subjects that question them.",
+                "### Technologies",
+                "ReactJS - Fastify - MongoDB - Mongoose - Redux"]
+        },
+        "JobScheduler": {
+            "title": "Job scheduler",
+            "content": 
+                ["### Presentation",
+                "End of studies' project.",
+                "A job scheduler is a system for **automating the sequence of computer tasks**. Unlike a scheduler, which only defines launch dates, a scheduler **conditions the execution of a task**. These conditions can be **temporal** or **resource** (materials or a end of execution token, for example). The scheduler will therefore wait until all the prerequisites of a task are met to execute it and so on to **create a sequence of tasks.**",
+                "My solution has a three-component architecture:",
+                "- **agent servers**: responsible for **executing jobs and output actions**.",
+                "- **rich client**: allows the user to **monitor and manage jobs interactively**.",
+                "- **database server**: **stores the data** and **transmits it to the two other components** via a Rest API and Server-sent Events (real time).",
+                "### Technologies",
+                "Maven - Spring boot - JavaFx - MySQL - Server-sent Events"]
+        },
+        "GarminWatchFace": {
+            "title": "Watch face",
+            "content": 
+                ["### Presentation",
+                 "Creating a Garmin watch face.",
+                 "### Technologies",
+                 "Monkey C"]
+        },
+        "CRM": {
+            "title": "CRM",
+            "content": [
+                "### Présentation",
+                "Project carried out during my first internship.",
+                "Creation of a **Customer Relationship Management** tool in Symfony.",
+                "Several features have been implemented:",
+                "- **basic functionalities**: management of client companies and their contacts, classification according to the sources and interests of each company, task management,",
+                "- **statistics** widgets with graphs,",
+                "- contact card display during an incoming call. This required the use of **Server-sent Events** and setting up a **Mercure Hub** platform,",
+                "- creation of a Google Gmail module, with the **Google App Script** language, in order to **display contact information** when viewing an email, but also to **archive the email** in the CRM.",
+                "### Technologies",
+                "Symfony ecosystem (Twig, Routing, Auth, Workflow, ...) - Server-sent events (Mercure) - Google App Script - ChartJs - Leaflet - CSS"
+            ]
+        },
+        "Portfolio": {
+            "title": "Portfolio",
+            "content": [
+                "### Présentation",
+                "Creation of a mockup with Figma then integration in React.",
+                "Setting up a Docker environment.",
+                "### Technologies",
+                "Figma - ReactJs - CSS - Docker - Docker Compose"
+            ]
+        },
+        "FloorPlanner": {
+            "title": "Créateur de plans 2D",
+            "content": [
+                "### Présentation",
+                "Project under development.",
+                "This is a 2D plan creation tool that allows you to position the walls and control points of a house.",
+                "### Technologies",
+                "Preact - Sass"
+
+            ]
+        },
+        "DigitErgo": {
+            "title": "Diagnostic ergonomique",
+            "content": [
+                "### Présentation",
+                "Web application for carrying out ergonomic diagnostics in companies.",
+                "### Technologies",
+                "Figma - React - Css"
+            ]
+        }
+        
+    }
+}

@@ -1,0 +1,56 @@
+#skills {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.skills-content {
+    margin-top: 40px;
+}
+
+#left-line {
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    left: 30px;
+    background-color: var(--primary);
+    z-index: -1;
+}
+
+#skills-items {
+    width: 100%;
+    margin-top: 45px;
+}
+
+.skills-relative .svg-art {
+    width: 100%;
+    margin-top: 45px;
+}
+
+.skills-relative {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+@media (max-width: 1190px) {
+    #left-line {
+        width: 4px;
+        left:22.5px
+    }
+
+}
+
+@media (max-width: 890px) {
+    #left-line {
+        left:18px
+    }
+    .skills-relative .svg-art {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 490px) {
+    .svg-art {
+        transform: scale(1.08);
+    }
+}

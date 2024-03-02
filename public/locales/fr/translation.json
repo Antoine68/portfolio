@@ -1,0 +1,167 @@
+{
+    "ContactMe": "Contactez-moi",
+    "Name": "Nom",
+    "Email":"Adresse mail",
+    "Subject": "Sujet",
+    "Message": "Message",
+    "Send": "Envoyer",
+    "Images": "Images",
+    "File": "Fichier",
+    "Edit": "Edition",
+    "View": "Affichage",
+    "Project": "Projet",
+    "sourceCode": "Code source",
+    "nav": {
+       "Presentation": "Présentation",
+       "Skills": "Compétences",
+       "Projects": "Projets",
+       "Contact": "Contact"
+    }, 
+    "introduction": {
+        "title": "Ingénieur logiciel",
+        "text": "J'interviens dans tous types de projets\nde transformation numérique"
+    },
+    "presentation": {
+        "textHeader": "Développeur fullstack passionné depuis 2018.",
+        "text": "À la fois autonome et impliqué dans le travail d'équipe, je m'engage, avec agilité, à réaliser des applications intuitives et maintenables.",
+        "tabs":[
+            {"title": "Études", "items": [
+                {"title": "Ingénieur logicel", "text": "Université de Technologie de Belfort-Montbéliard (FR)", "footer":"2020-2023"},
+                {"title": "DUT Informatique", "text": "IUT de Belfort-Montbéliard (FR)\nCégep de Matane (QC)", "footer":"2018-2020"},
+                {"title": "Baccaleauréat S SI", "text": "Collège Adélaïde Hautval, Ferrette (FR)", "footer":"2015-2018"}
+            ]},
+            {"title": "Expériences", "items": [
+                {"title": "CS GROUP FRANCE", "text": "Développeur ingénieur d'études.\nCréation de logiciels métier en Java.", "footer":"juillet 2023 - aujourd'hui"},
+                {"title": "CS GROUP FRANCE", "text": "Stage de fin d'étude.\nDéveloppement d'un ordonnanceur de jobs.", "footer":"février 2023 - juillet 2023"},
+                {"title": "2LE", "text": "Stage ingénieur débutant.\nParticipations aux développement de projets Symfony.", "footer":"septembre 2021 - février 2022"}
+            ]}            
+        ]
+    },
+    "skills": {
+        "website": {"textHeader": "Création de sites web.", "text": "Qu'il soit vitrine ou marchand, un site web permet de mettre en avant une entreprise et ses produits ou services au près du public cible."},
+        "software": {"textHeader": "Développement de logiciels metiers.", "text": "Des clients lourds ou légers, sur mesure, qui couvrent les besoins spécifiques des entreprises."},
+        "mobile": {"textHeader": "Elaboration d'applications mobile.", "text": "Pour offrir une meilleur expérience utilisateur aux  clients."},
+        "validation": {"textHeader": "Toutes les solutions respectent un processus de validation strict.", "text": "Cela permet de s'assurer de leur robustesse et leur fiabilité."}
+    },
+    "svgIllustration" : {
+        "dataMonitoring": "Monitoring des données",
+        "dataFilter": "Filtre des données",
+        "dataTable": "Table des données",
+        "bussinessLogic": "Logique Métier",
+        "range": "Intervalle",
+        "tags": "Mots clés",
+        "rating": "Notes",
+        "color": "Couleur",
+        "humanResources": "<1>Human</1> <2>Resources</2>",
+        "planning": "Planning",
+        "supplyChain": "<1>Supply</1> <2>Chain</2>",
+        "customers": "Customers",
+        "ORDER": "COMMANDE",
+        "Item": "Article",
+        "Taxes": "TVA",
+        "Total": "Total",
+        "currency": "€",
+        "PAY": "PAYER",
+        "desktopApplication": "<1>Application</1> <2>de bureau</2>",
+        "mobileApplication": "<1>Application</1> <2>mobile</2>",
+        "webApplication": "<1>Application</1> <2>web</2>",
+        "staticAnalysis": "<1>Analyse</1> <2>statique</2>",
+        "tests": "Tests",
+        "deploy": "Déploiment",
+        "schedule": "Programmez",
+        "yourNextTrip": "votre futur voyage",
+        "popular": "Populaire",
+        "seeAll": "Voir tout",
+        "flights": "vols",
+        "museum": "Musée",
+        "restaurant": "Restaurant",
+        "sport": "Sport"
+    },
+    "footer": {
+        "rights": "Tous droits réservés",
+        "thanks": "Merci de votre visite"
+    },
+    "projects" : {
+        "explore": "Explorer mes projets",
+        "Sondeju": {
+            "title": "Générateur de sondages",
+            "content": 
+                ["### Présentation",
+                "Projet réalisé durant mon parcours scolaire.",
+                "Il s'agit d'une application web qui permet de **créer dynamiquement**, grâce à un éditeur WYSIWYG, des **sondages** et des **enquêtes** puis de les classer par catégorie. Toutes ces créations sont ensuite **accessibles publiquement** dans la page d'accueil.",
+                "Cela permet à toute personne visitant le site de **participer aux sondages** qui l'intéresse, favorisant ainsi l'**interaction** et la **diversité des réponses**.",
+                "En plus de la participation, l'application offre également la possibilité de **consulter les résultats des enquêtes de manière gratuite et libre**.",
+                "En rendant les enquêtes accessibles publiquement, Sondeju **démocratise l'accès aux études**.",
+                "Cela permet à chacun, indépendamment de ses antécédents ou de sa situation géographique, de contribuer à des recherches et de partager des perspectives uniques ou encore de se reseigner sur des sujets qui les questionnent.",
+                "### Technologies",
+                "ReactJS - Fastify - MongoDB - Mongoose - Redux - CSS"]
+        },
+        "JobScheduler": {
+            "title": "Ordonnanceur de jobs",
+            "content":
+                ["### Présentation",
+                "Projet de fin d'étude.",
+                "Un ordonnanceur de jobs est un système permettant d'**automatiser l'enchainement des traitements de tâches informatiques**. Contrairement à un planificateur, qui définit seulement des dates de lancement, un ordonnanceur **conditionne l'exécution d'une tâche**. Ces conditions peuvent être de type **temporel** ou des **ressources** (matériels ou un jeton de fin d'exécution d'une tâche, par exemple). L'ordonnanceur va donc attendre que toutes les prérequis d'une tâche soient remplis pour l'exécuter et ainsi de suite pour créer une **séquence de tâches**.",
+                "Ma solution a une architecture à trois composantes:",
+                "- les **serveurs agents**: qui sont responsables de l'**exécution des jobs** et des **actions de sorties**.",
+                "- l'**interface client lourd**: qui permet à l'utilisateur de **monitorer et gérer les jobs interactivement**.",
+                "- le **serveur de base de données**: qui **stocke les données** et **les transmet aux deux autres composants** via une API Rest et les Server-sent Events (temps réel).",
+                "### Technologies",
+                "Maven - Spring boot - JavaFx - MySQL - Server-sent Events"]
+        },
+        "GarminWatchFace": {
+            "title": "Cadran de montre",
+            "content": 
+                ["### Présentation",
+                 "Création d'un cadran pour montre Garmin.",
+                 "### Technologies",
+                 "Monkey C"]
+        },
+        "CRM": {
+            "title": "CRM",
+            "content": [
+                "### Présentation",
+                "Projet réalisé durant mon premier stage.",
+                "Création d'un outil de **gestion de la relation avec la clientèle** en Symfony.",
+                "Plusieurs fonctionnalités ont été mise en place:",
+                "- **fonctionalités de base**: gestion des sociétés clientes et de leurs contacts, classification selon les sources et intérêts de chacune des sociétés, gestion de tâches,",
+                "- widgets **statistiques** avec des graphiques,",
+                "- affichage carte contact lors d'un appel entrant. Cela a nécessité l'utilisation des **Server-sent Events** et de mettre en place une plateforme **Mercure Hub**,",
+                "- création d'un module Google Gmail, avec le language **Google App Script**, afin d'**afficher les informations** des contacts lors de la consultation d'un mail, mais également d'**archiver le mail** dans le CRM.",
+                "### Technologies",
+                "Ecosystème Symfony (Twig, Routing, Auth, Workflow, ...) - Server-sent events (Mercure) - Google App Script - Javascript - CSS"
+            ]
+        },
+        "Portfolio": {
+            "title": "Portfolio",
+            "content": [
+                "### Présentation",
+                "Création d'une maquette avec Figma puis intégration en React.",
+                "Mise en place d'un environnement Docker.",
+                "### Technologies",
+                "Figma - ReactJs - CSS - Docker - Docker Compose"
+            ]
+        },
+        "FloorPlanner": {
+            "title": "Créateur de plans 2D",
+            "content": [
+                "### Présentation",
+                "Projet en cours de développement.",
+                "Il s'agit d'un outil de création de plan 2D qui permet de positionner les murs et les points de contrôles d'une maison.",
+                "### Technologies",
+                "Preact - Sass"
+            ]
+        },
+        "DigitErgo": {
+            "title": "Diagnostic ergonomique",
+            "content": [
+                "### Présentation",
+                "Application web permettant de réaliser des diagnostics ergonomique en entreprise.",
+                "### Technologies",
+                "Figma - React - Css"
+            ]
+        }
+        
+        
+    }
+}

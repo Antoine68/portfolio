@@ -1,0 +1,97 @@
+.tabs-title-container {
+    width: 100%;
+}
+
+.tabs-title-container > .tabs-title:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.tabs-title-container > .tabs-title:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.tabs-title {
+    cursor: pointer;
+    user-select: none;
+    font-size: 22px;
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    padding: 8px 0;
+    background-color: var(--background-primary);
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.tabs-title-active {
+    background-color: var(--primary);
+}
+
+.tab {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    background: url("../../../public/pres_bckg.svg");
+}
+
+.tab > .tab-card {
+    margin: 15px 0;
+    background-color: var(--background-primary);
+    width: 55%;
+    padding: 15px 0;
+    border-radius: 5px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.tab-card:nth-child(even)::after {
+    content: url("../../../public/right_left_arrow.svg");
+    position: absolute;
+    top:0;
+    transform: translateY(-100%);
+    left:20%;
+}
+
+.tab-card:nth-child(even):not(:last-child)::before {
+    content: url("../../../public/left_right_arrow.svg");
+    position: absolute;
+    top:0;
+    transform: translateX(-90%) translateY(40%);
+    left:0;
+}
+
+.tab > .tab-card:nth-child(even) {
+    align-self: flex-end;
+}
+
+.tab-card-content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.tab-card-content > .tab-card-title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.tab-card-content > .tab-card-text {
+    font-size: 18px;
+    margin: 8px 0;
+    white-space: pre-wrap;
+}
+
+.tab-card-content > .tab-card-footer {
+    font-size: 17px;
+    color: #878787;
+}
+
+@media (max-width: 570px) {
+    .tab > .tab-card {
+        width: 100%;
+    }
+    
+    .tab > .tab-card::before, .tab > .tab-card::after {
+        content: none !important;
+    }
+    
+}

@@ -1,0 +1,19 @@
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 40px;
+    font-size: calc(2.8 * var(--space));
+    cursor: pointer;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.button-primary {
+    color: var(--text-primary);
+    background-color: var(--primary);
+}
+
+.button-secondary {
+    color: var(--text-secondary);
+    background-color: var(--secondary);
+}
